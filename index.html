@@ -1,0 +1,157 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script>
+    <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.4/dist/tf.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link id="cssTheme" rel="stylesheet" href="public/styling/main.css"/>
+    <title>Nueroevolution Gameroom</title>
+    <link rel="shortcut icon" type="image/png" href="public/images/favicon.png">
+  </head>
+  
+  <body>
+          <div class = "conatiner-fluid">
+            <div id = "navbarDiv">
+           <nav id ="navbar">
+             <div class = "row" id = "headingrow">
+                 <div class = "col col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 ">
+                    <ul class = "navbar-nav">
+                      <li id = "imageli"><h3 id ="title1"><img src="public/images/favicon.png" id = "favicon" width = "35" height = "35" alt="logo">Nueroevolution <li id ="spanli"><span id ="title">GameRoom</span></li><li id = "manual">
+                          <button type="button" class="btn float-right" id = "userGuide" data-toggle="modal" data-target="#exampleModalLong">
+                            The Manual
+                        </button>
+                        <div class="modal fade" id="userGuideModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true" id="close">&times;</span>
+                                  </button>
+                                  <h3 class="modal-title" id="modalTitle">Welcome to the Neuroevolution Gameroom!</h3>
+                                  <img src="public/images/favicon.png" class ="center" id = "favicon" width = "35" height = "35" alt="logo">
+                                </div>
+                                <div class="modal-body" id = "modalBody">
+                                  <p id = "neuroparagraph"><span id = "neuro"> Neuroevolution:</span> In simplest terms uses an evolutionary algorithm to optimize training performance of a neural network in order to solve a problem.</p>
+                                  <p id = "rulesofthegame"> <span id = "gameguide">Guide to Winning:</span> Navigate the agent through the barriers by using the <span id = "spacebar">space bar</span> on your keyboard. Avoid hitting the barriers, the top or bottom, +1 point for each passed barrier.</p>
+                                  <p id = "howtoplay"> <span id ="howtotrain">How To Train?:</span> Use the <span id = "selectANN">Select an Artificial Neural Network</span> button to start training. Once your model is trained you can <span id ="stopspan">Stop Training</span> and click the <span id ="versespan">Verse a Trained Agent</span> button to play against the best agent. Practice while the game trains by clicking the <span id ="singlespan">Single Player Match</span> button. </p>
+                                  <p id = "recommend"> *Recommended training time: 10-20 generations. Use the Speed slider to train faster.*</p>
+                                  <p id = "geneticalgorithm"> <span id ="geneticalgospan">The Genetic Algorithm:</span> is a semi-supervised evolutionary algorithm. It does not guarantee the most optimal solution. However! It is functional with partial sets of data. The algorithm mutates the population agents in each generation that have the greatest fitness score. By adjusting the weights and biases of succeedingly better populations, the end result is an agent most properly suited for the problem.  </p>
+                                  <p id = "sigmoid"> <span id = "sigmoidal">Sigmoidal Activation Function:</span> is continuously differentiable and outputs a value bounded between 0, 1. Sigmoid is a type of squashing function which makes it useful in predicting probabilities. </p>
+                                  <img src="public/images/Sigmoidgraph.png" class = "center" id = "sigmoidimage" width = "250" height = "250" alt="Sigmoid">
+                                  <p id = "relu"> <span id = "reluspan">The Rectifier Activation Function:</span> or ReLU is bounded between 0, x. The function will return a 0 for any negative input and for any positive x it returns that value. </p>
+                                  <img src="public/images/rectifiergraph.png" class = "center" id = "rectifierimage" width = "250" height = "200" alt="Rectifier">
+                                  <p id = "softmax"> <span id = "softMaxspan">The Softmax Activation Function:</span> is bounded between 0, 1, and returns probabilities that sum to 1. It is a great activation function for classification problems. </p>
+                                  <p id = "feedforwardparagraph"> <span id = "feedforwardspan">Feed Forward Artificial Neural Network:</span> Is renowned as the first type of neural network. It has fully connected nodes, where the inputs of one layer are the outputs of another. Information only flows in the forward direction from the input nodes.</p>
+                                  <img src="public/images/feedforwardcopy.png" class = "center" id = "feedforwardimage" width = "250" height = "250" alt="Feed Forward">
+                                  <p id = "deepfeedforwardparagraph"> <span id = "deepfeedforwardspan">Deep Feed Forward Artificial Neural Network:</span> Follows the same characteristics of the feed forward network (fully connected or dense, and no loops) but has multiple layers of hidden nodes.</p>
+                                  <img src="public/images/deepfeedforwardcopy.png" class = "center" id = "deepfeedforwardimage" width = "250" height = "300" alt="Deep Feed">
+                                  <p id = "closing">Thank you for coming by! I hope you enjoyed the Gameroom. The source code for this project is on my <a href ="https://github.com/jvioladevelops?tab=repositories"> github.</a></p>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                      </li>
+                    </h3>
+                  </li>
+                </ul>
+              </div>
+             </div>
+
+             <div class = "row justify-content-center align-items-center" id = "headingrow">
+                <div class = "col col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                  <ul class = "nav justify-content-center">
+                    <li class = "nav-item">
+                    <h5 id ="slogan">Train an artificial neural network to match your skills!</h5>
+                  </li>
+                  </ul>
+                  </div>
+                </div>
+
+  <div class = "row">
+    <div class = "col col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+      <ul class = "nav justify-content-center">
+        <li class = "nav-item">
+                <div id = "speeddiv">
+                    Speed: <span id="speed">1</span>
+                  </div>
+                    <input id="speedSlider" type="range" min="1" max="3" value="1">
+                 
+                </li>
+                <li class = "nav-item">
+                  <div class="dropdown" type="button">
+                    <button class="btn btn-default navbar-btn" type="button"  class="btn btn-default navbar-btn"id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Select an Artificial Neural Network
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2" id = "dropdown" class = "btn btn-default navbar-btn">
+                      <button id="startraining" onclick="startTraining()" class = "btn btn-default navbar-btn" type="button">Feed Forward with Sigmoid</button>
+                      <button id="startrainingdff" onclick="startTrainingDff()"  class = "btn btn-default navbar-btn" type="button">Deep Feed Forward with ReLU</button>
+                    </div>
+                  </div> 
+                </li>
+                  <li class ="nav-item"><button id="stoptraining" onclick="stopTraining()"  class = "btn btn-default navbar-btn" type="button">Stop Training</button></li>
+                  <li class ="nav-item"><button id="best"  class = "btn btn-default navbar-btn" type="button">Verse a Trained Agent</button></li>
+                  <li class = "nav-item"><button id="restartgame" onclick="restartGame()"  class = "btn btn-default navbar-btn" type="button">Restart Match</button></li>
+                  <li class = "nav-item"><button id = "playergame" onclick="start123()"  class = "btn btn-default navbar-btn" type="button">Single Player Match</button></li>
+              </ul>
+      </div>
+</div>
+
+           </nav>
+        </div>
+      </div>
+
+    <div class = "conatiner-fluid">
+      <div class = "row">
+          <div class = "col col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <ul class = "nav justify-content-center">
+                  <li class = "nav-item" id ="tscore"> Training Score:  <span id="TFscore">0</span></li>
+                  <li class = "nav-item" id ="gencount"> Generation:  <span id="gc">0</span></li>
+                  <li class = "nav-item" id ="playerscore" > Player Score:  <span id="score">0</span> </li>
+                  <li class = "nav-item" id ="playermax">  Player Max Score:  <span id="mscore">0</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+      <div class = "container-fluid">
+        <div class = "row">
+
+      <div class = "col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6" id="canvascontainer"></div>
+    <div class = "col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6" id ="playercanvascontainer"></div>
+
+  </div>
+  </div>
+
+  <script language="javascript" type="text/javascript" src="sketch.js"></script>
+  <script language="javascript" type="text/javascript" src="dffpipe.js"></script>
+  <script language="javascript" type="text/javascript" src="deepfeedforward.js"></script>
+  <script language="javascript" type="text/javascript" src="dffbird.js"></script>
+  <script language="javascript" type="text/javascript" src="geneticalgodff.js"></script>
+  <script language="javascript" type="text/javascript" src="feedforward.js"></script>
+  <script language="javascript" type="text/javascript" src="geneticalgorithm.js"></script>
+  <script language="javascript" type="text/javascript" src="bird.js"></script>
+  <script language="javascript" type="text/javascript" src="pipe.js"></script>
+  <script language="javascript" type="text/javascript" src="playerSketch.js"></script>
+  <script language="javascript" type="text/javascript" src="playerBird.js"></script>
+  <script language="javascript" type="text/javascript" src="playerPipe.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("#userGuide").click(function(){
+        $("#userGuideModal").modal();
+      });
+    });
+    </script>
+     
+      
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+</html>
