@@ -80,6 +80,10 @@ padding-top: 1em;
 .dropdown-menu{
   background-color: rgb(56, 72, 99); 
 }
+#dropdown{
+  background-color: rgb(56, 72, 99);
+  
+}
 #startraining {
     background-color: rgb(56, 72, 99); 
     color: white;
