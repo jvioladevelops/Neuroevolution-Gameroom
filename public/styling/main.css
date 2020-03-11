@@ -74,14 +74,20 @@ padding-top: 1em;
 }
 #dropdownMenu2 {
     background-color: rgb(56, 72, 99); 
-    color: white;
+    font-color: white;
+  padding-left: 1%;
+  padding-right: 1%;
 
 }
 .dropdown-menu{
   background-color: rgb(56, 72, 99); 
+    padding-left: 1%;
+  padding-right: 1%;
 }
 #dropdown{
   background-color: rgb(56, 72, 99);
+    padding-left: 1%;
+  padding-right: 1%;
   
 }
 #startraining {
