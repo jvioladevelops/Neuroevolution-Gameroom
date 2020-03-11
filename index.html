@@ -10,7 +10,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link id="cssTheme" rel="stylesheet" href="public/styling/main.css"/>
-    <title>Nueroevolution Gameroom</title>
+    <title>Nueroevolution Visualizer</title>
     <link rel="shortcut icon" type="image/png" href="public/images/favicon.png">
   </head>
   
@@ -21,7 +21,7 @@
              <div class = "row" id = "headingrow">
                  <div class = "col col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 ">
                     <ul class = "navbar-nav">
-                      <li id = "imageli"><h3 id ="title1"><img src="public/images/favicon.png" id = "favicon" width = "35" height = "35" alt="logo">Nueroevolution <li id ="spanli"><span id ="title">GameRoom</span></li><li id = "manual">
+                      <li id = "imageli"><h3 id ="title1"><img src="public/images/favicon.png" id = "favicon" width = "35" height = "35" alt="logo">Nueroevolution <li id ="spanli"><span id ="title">Visualizer</span></li><li id = "manual">
                           <button type="button" class="btn float-right" id = "userGuide" data-toggle="modal" data-target="#exampleModalLong">
                            Read The Manual
                         </button>
@@ -32,7 +32,7 @@
                                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true" id="close">&times;</span>
                                   </button>
-                                  <h3 class="modal-title" id="modalTitle">Welcome to the Neuroevolution Gameroom!</h3>
+                                  <h3 class="modal-title" id="modalTitle">Welcome to the Neuroevolution Visualizer!</h3>
                                   <img src="public/images/favicon.png" class ="center" id = "favicon" width = "35" height = "35" alt="logo">
                                 </div>
                                 <div class="modal-body" id = "modalBody">
@@ -50,7 +50,7 @@
                                   <img src="public/images/feedforwardcopy.png" class = "center" id = "feedforwardimage" width = "250" height = "250" alt="Feed Forward">
                                   <p id = "deepfeedforwardparagraph"> <span id = "deepfeedforwardspan">Deep Feed Forward Artificial Neural Network:</span> Follows the same characteristics of the feed forward network (fully connected or dense, and no loops) but has multiple layers of hidden nodes.</p>
                                   <img src="public/images/deepfeedforwardcopy.png" class = "center" id = "deepfeedforwardimage" width = "250" height = "300" alt="Deep Feed">
-                                  <p id = "closing">Thank you for coming by! I hope you enjoyed the Gameroom. The source code for this project is on my <a href ="https://github.com/jvioladevelops?tab=repositories"> github.</a></p>
+                                  <p id = "closing">Thank you for coming by! I hope you enjoyed the Visualizer. The source code for this project is on my <a href ="https://github.com/jvioladevelops?tab=repositories"> github.</a></p>
                                 </div>
                                 <div class="modal-footer">
                                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -88,7 +88,7 @@
                 <li class = "nav-item">
                   <div class="dropdown" type="button">
                     <button class="btn btn-default navbar-btn" type="button"  class="btn btn-default navbar-btn"id="dropdownMenu2" data-toggle="dropdown" >
-                      Select an Artificial Neural Network
+                      Visualize Neuroevolution
                     </button>
                     <div class="dropdown-menu"  id = "dropdown" class = "btn btn-default navbar-btn">
                       <button id="startraining" onclick="startTraining()" class = "btn btn-default navbar-btn" type="button">Feed Forward with Sigmoid</button>
