@@ -1,6 +1,7 @@
 # Neuroevolution Visualizer
 
 Welcome to the NeuroEvolution Visualizer! I built it this project because of my interest in learning algorithms and artificial neural networks. I hope that you enjoy the Visualizer. A live version can be found here: <https://jvioladevelops.github.io/Neuroevolution-Visualizer/>
+Implement New Algorithm
 #
 
 **Neuroevolution:** In simplest terms uses an evolutionary algorithm to optimize training performance of a neural network in order to solve a problem.
