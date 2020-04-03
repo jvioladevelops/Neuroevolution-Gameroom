@@ -10,7 +10,7 @@ Welcome to the NeuroEvolution Visualizer! I built it this project because of my 
 **The Softmax Activation Function:** is bounded between 0, 1, and returns probabilities that sum to 1. It is a great activation function for classification problems.
 
 **Sigmoidal Activation Function:** is continuously differentiable and outputs a value bounded between 0, 1. Sigmoid is a type of squashing function which makes it useful in predicting probabilities.
-![alt text](https://github.com/jvioladevelops/Neuroevolution-Visualizer/blob/master/public/images/Sigmoidgraph.png width="400" height="400" "Sigmoidal Graph")
+<img src="https://github.com/jvioladevelops/Neuroevolution-Visualizer/blob/master/public/images/Sigmoidgraph.png" width="400" height="400">
 
 **The Rectifier Activation Function:** or ReLU is bounded between 0, x. The function will return a 0 for any negative input and for any positive x it returns that value.
 ![alt text](https://github.com/jvioladevelops/Neuroevolution-Visualizer/blob/master/public/images/rectifiergraph.png "Rectifier Graph")
