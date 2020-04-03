@@ -14,12 +14,15 @@ Welcome to the NeuroEvolution Visualizer! I built it this project because of my 
 <img src="https://github.com/jvioladevelops/Neuroevolution-Visualizer/blob/master/public/images/Sigmoidgraph.png" width="400" height="400">
 
 **The Rectifier Activation Function:** or ReLU is bounded between 0, x. The function will return a 0 for any negative input and for any positive x it returns that value.
-![alt text](https://github.com/jvioladevelops/Neuroevolution-Visualizer/blob/master/public/images/rectifiergraph.png "Rectifier Graph")
 
+<img src="https://github.com/jvioladevelops/Neuroevolution-Visualizer/blob/master/public/images/rectifiergraph.png" width="400" height="400">
 
 **Feed Forward Artificial Neural Network:** Is renowned as the first type of neural network. It has fully connected nodes, where the inputs of one layer are the outputs of another. Information flows in the forward direction from the input nodes.
-![alt text](https://github.com/jvioladevelops/Neuroevolution-Visualizer/blob/master/public/images/feedforward.png "feedforward")
+
+<img src="https://github.com/jvioladevelops/Neuroevolution-Visualizer/blob/master/public/images/feedforward.png" width="400" height="400">
 
 **Deep Feed Forward Artificial Neural Network:** Follows the same characteristics of the feed forward network (fully connected or dense, and no loops) but has multiple layers of hidden nodes.
-![alt text](https://github.com/jvioladevelops/Neuroevolution-Visualizer/blob/master/public/images/deepfeedforward.png "deepfeedforward")
+
+<img src="https://github.com/jvioladevelops/Neuroevolution-Visualizer/blob/master/public/images/deepfeedforward.png" width="400" height="400">
+
 
