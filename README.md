@@ -6,7 +6,7 @@ Welcome to the NeuroEvolution Visualizer! I built it this project because of my 
 
 ##
 
-**Neuroevolution:** In simplest terms uses an evolutionary algorithm to optimize training performance of a neural network in order to solve a problem.
+**Neuroevolution:** In simplest terms is an algorithm used in combination with a neural network to optimize training performance and solve a problem. 
 
 **The Genetic Algorithm:** is a semi-supervised evolutionary algorithm. It does not guarantee the most optimal solution. However! It is functional with partial sets of data. The algorithm mutates the population agents in each generation that have the greatest fitness score. By adjusting the weights and biases of succeedingly better populations, the end result is an agent most properly suited for the problem.
 
