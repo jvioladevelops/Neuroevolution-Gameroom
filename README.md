@@ -1,6 +1,6 @@
 # Neuroevolution Visualizer
 
-Welcome to the NeuroEvolution Visualizer! I built it this project because of my interest in learning algorithms and artificial neural networks. I hope that you enjoy the Visualizer. A live version can be found here: <https://jvioladevelops.github.io/Neuroevolution-Visualizer/>
+Welcome to the NeuroEvolution Visualizer! I built this project because of my interest in learning algorithms and artificial neural networks. I hope that you enjoy the Visualizer. A live version can be found here: <https://jvioladevelops.github.io/Neuroevolution-Visualizer/>
 
 <img src="https://github.com/jvioladevelops/Neuroevolution-Visualizer/blob/master/public/images/Neuroevolution.gif" width="900" height="400">
 
