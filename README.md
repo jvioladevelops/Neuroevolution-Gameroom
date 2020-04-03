@@ -17,7 +17,7 @@ Welcome to the NeuroEvolution Visualizer! I built it this project because of my 
 
 
 **Feed Forward Artificial Neural Network:** Is renowned as the first type of neural network. It has fully connected nodes, where the inputs of one layer are the outputs of another. Information flows in the forward direction from the input nodes.
-![alt text](https://github.com/jvioladevelops/Neuroevolution-Visualizer/blob/master/public/images/feedforward.png =250x250 "feedforward")
+![alt text](https://github.com/jvioladevelops/Neuroevolution-Visualizer/blob/master/public/images/feedforward.png | width=100 "feedforward")
 
 **Deep Feed Forward Artificial Neural Network:** Follows the same characteristics of the feed forward network (fully connected or dense, and no loops) but has multiple layers of hidden nodes.
 ![alt text](https://github.com/jvioladevelops/Neuroevolution-Visualizer/blob/master/public/images/deepfeedforward.png "deepfeedforward")
