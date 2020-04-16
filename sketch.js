@@ -83,6 +83,7 @@ let dffsaveButton;
     stopbutton.disabled = false;
     versebutton.disabled = true;
     restartbutton.disabled = true;
+    playerbutton.disabled = true;
     });
 
     startdffbutton.addEventListener('click', function(event) {
@@ -91,6 +92,7 @@ let dffsaveButton;
     stopbutton.disabled = false;
     versebutton.disabled = true;
     restartbutton.disabled = true;
+    playerbutton.disabled = true;
     });
 
     versebutton.addEventListener('click', function(event){
@@ -652,6 +654,7 @@ function stopTraining() {
   TFmaxScore = my1p5.max(TFscore, TFmaxScore);
   startdffbutton.disabled = false;
   startbutton.disabled = false;
+  playerbutton.disabled = false;
   stopbutton.disabled = true;
   versebutton.disabled = false;
   nextGeneration();
@@ -664,6 +667,7 @@ function stopTraining() {
     my1p5.dffbird = new dffBird();
     TFdffmaxScore = my1p5.max(TFdffscore, TFdffmaxScore);
     startdffbutton.disabled = false;
+    playerbutton.disabled = false;
     startbutton.disabled = false;
     stopbutton.disabled = true;
     versebutton.disabled = false;
