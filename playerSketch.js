@@ -218,6 +218,8 @@ function playergameover (){
   myp5.textAlign(myp5.LEFT, myp5.BASELINE);
   maxScore = myp5.max(score, maxScore);
   playerbutton.disabled = false;
+  startbutton.disabled = false;
+  startdffbutton.disabled = false;
   isOver = true;
   myp5.pbird = new pBird();
   score = 0;
@@ -242,6 +244,7 @@ function gameover() {
     maxScore = myp5.max(score, maxScore);
     startbutton.disabled = false;
     playerbutton.disabled = false;
+    startdffbutton.disabled = false;
     ppipes = [];
     isOver = true;
     myp5.pbird = new pBird();
@@ -257,6 +260,7 @@ function gameover() {
     maxScore = myp5.max(score, maxScore);
     startdffbutton.disabled = false;
     playerbutton.disabled = false;
+    startbutton.disabled = false;
     ppipes = [];
     isOver = true;
     myp5.pbird = new pBird();
