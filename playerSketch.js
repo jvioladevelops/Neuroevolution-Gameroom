@@ -16,6 +16,8 @@ var pcounter =0;
 var playerbutton = document.getElementById("playergame");
 playerbutton.disabled = false;
 playerbutton.addEventListener('click', function(event) {
+startbutton.disabled = true;
+startdffbutton.disabled = true;
 playerbutton.disabled = true;
 });
 
@@ -238,6 +240,7 @@ function playerLOSES(){
 
 function gameover() {
     maxScore = myp5.max(score, maxScore);
+    startbutton.disabled = false;
     playerbutton.disabled = false;
     ppipes = [];
     isOver = true;
@@ -252,6 +255,7 @@ function gameover() {
   }
   function dffgameover() {
     maxScore = myp5.max(score, maxScore);
+    startdffbutton.disabled = false;
     playerbutton.disabled = false;
     ppipes = [];
     isOver = true;
